@@ -1,3 +1,27 @@
+commit 9d228fdce6c39fa3087474f9b5c132811749c99d
+Merge: 6967170 facd39e
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Aug 22 22:39:14 2026 -0400
+
+    Merge remote-tracking branch 'refs/remotes/org-ai-assisted/ai'
+
+commit facd39e60bd60ac9988492a36a64b9ebcf1995e8
+Author: claude (dev272 e8b76afb-795c-4739-8ebd-023de854021e) <noreply@anthropic.com>
+Date:   Fri Aug 21 04:21:57 2026 -0400
+
+    bootclockrandomization: source helper-scripts via HELPER_SCRIPTS_PATH, drop SC1091 disable
+
+    - usr/bin/bootclockrandomization: use source "${HELPER_SCRIPTS_PATH:-}"/usr/libexec/helper-scripts/check_runtime.bsh;
+      keep the relative shellcheck source directive so the gate follows the sibling repo.
+
+    Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+commit 69671700677bea26d81c682a31d41f372501edce
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Jul 21 10:32:57 2026 +0000
+
+    bumped changelog version
+
 commit 9b4e27da3e67948ba8ae57373129aab2b609c0eb
 Merge: 4ca7f4f 95fea1e
 Author: Patrick Schleizer <adrelanos@whonix.org>
